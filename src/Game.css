@@ -1,0 +1,9 @@
+#game-board {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
