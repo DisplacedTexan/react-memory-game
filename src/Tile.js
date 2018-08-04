@@ -5,6 +5,7 @@ import './Tile.css';
 class Tile extends Component {
     constructor(props) {
         super(props);
+        this.state = {};
         this.handleVisibilityChange = this.handleVisibilityChange.bind(this);
     }
 

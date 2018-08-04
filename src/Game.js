@@ -92,7 +92,9 @@ class Game extends Component {
     }
     
     startNewGame() {
-        let {tiles} = this.state.tiles.map((tile) => ({
+        let {tiles} = this.state;
+
+        tiles.map((tile) => ({
             ...tile,
             cardState: CardState.HIDING
         }));
@@ -120,8 +122,7 @@ class Game extends Component {
                 visibility={tile.cardState}
                 count={count}
                 changeCardState={isClickable}
-                checkForMatch={this.checkForMatch}
-            />
+                checkForMatch={this.checkForMatch} />
         ));
         
         return (
